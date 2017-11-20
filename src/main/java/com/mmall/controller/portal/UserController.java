@@ -28,7 +28,7 @@ public class UserController {
      * @param session
      * @return
      */
-    @RequestMapping(value = "login.do", method = RequestMethod.POST)
+    @RequestMapping(value = "login.do")
     @ResponseBody   //将返回值，设置为json
     public ServerResponse<User> login(String username, String password, HttpSession session) {
         ServerResponse<User> response = iUserService.login(username, password);

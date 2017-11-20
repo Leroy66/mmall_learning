@@ -17,10 +17,11 @@ public class PropertiesUtil {
 
     private static Properties props;
 
+    //静态块（类加载的时候只执行一次），优于普通代码块，优于构造代码块
     static {
         String fileName = "mmall.properties";
         props = new Properties();
-        try {
+        try {// 读文件---mmall.properties，
             props.load(new InputStreamReader(PropertiesUtil.class.getClassLoader().getResourceAsStream(fileName), "UTF-8"));
         } catch (IOException e) {
             logger.error("配置文件读取异常", e);
