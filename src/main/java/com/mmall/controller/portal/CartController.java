@@ -47,10 +47,6 @@ public class CartController {
         if (user == null) {
             return ServerResponse.createByErrorCodeMessage(ResponsesCode.NEED_LOGIN.getCode(), ResponsesCode.NEED_LOGIN.getDesc());
         }
-        System.out.println(count);
-        System.out.println(productId);
-        System.out.println(JSON.toJSONString(user));
-        System.out.println(user.getId());
         return iCartService.add(user.getId(), productId, count);
     }
 

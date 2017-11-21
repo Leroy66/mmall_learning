@@ -37,7 +37,6 @@ public class CartServiceImpl implements ICartService {
         }
 
 
-        System.out.println("---userId-----" + userId);
         Cart cart = cartMapper.selectByUserIdAndProductId(userId, productId);
         if (cart == null) {
             //这个产品不在这个购物车里，需要增加一个购物车
@@ -55,7 +54,6 @@ public class CartServiceImpl implements ICartService {
             cartMapper.updateByPrimaryKeySelective(cart);
         }
 
-        System.out.println("--this.list(userId)----userId-----" + userId);
         return this.list(userId);
     }
 
