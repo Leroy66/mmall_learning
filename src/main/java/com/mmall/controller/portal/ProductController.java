@@ -22,7 +22,7 @@ public class ProductController {
 
 
     /**
-     * 前台获取产品详情
+     * 前台获取产品详情p
      *
      * @param productId
      * @return

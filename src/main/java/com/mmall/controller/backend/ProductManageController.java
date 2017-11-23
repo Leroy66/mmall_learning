@@ -230,7 +230,7 @@ public class ProductManageController {
                 resultMap.put("msg", "上传失败！");
                 return resultMap;
             }
-            String url = PropertiesUtil.getProperty("ftp.server.http.prefix") + targetFileName;
+            String url = PropertiesUtil.getProperty("ftp.server.http.prefix")  + targetFileName;
 
             resultMap.put("success", true);
             resultMap.put("msg", "上传成功！");
