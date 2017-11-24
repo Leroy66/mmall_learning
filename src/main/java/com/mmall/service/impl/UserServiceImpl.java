@@ -33,7 +33,6 @@ public class UserServiceImpl implements IUserService {
             return ServerResponse.createByErrorMessagr("密码错误！！！");
         }
         user.setPassword(StringUtils.EMPTY);
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return ServerResponse.createBySuccess("登陆成功", user);
     }
 

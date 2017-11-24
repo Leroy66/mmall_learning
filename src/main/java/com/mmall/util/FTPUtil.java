@@ -32,8 +32,8 @@ public class FTPUtil {
         FTPUtil ftpUtil = new FTPUtil(ftpIp, 21, ftpUser, ftpPass);
         logger.info("开始连接ftp服务器");
         //  ftp文件夹下的img文件夹下
-        boolean result=ftpUtil.uploadFile("img",fileList);
-        logger.info("开始连接ftp服务器，结束上传，上传结果：{}",result);
+        boolean result = ftpUtil.uploadFile("img", fileList);
+        logger.info("开始连接ftp服务器，结束上传，上传结果：{}", result);
         return result;
     }
 
@@ -62,6 +62,8 @@ public class FTPUtil {
                 //关闭连接
                 ftpClient.disconnect();
             }
+        } else {
+            uploaded = false;
         }
         return uploaded;
     }
