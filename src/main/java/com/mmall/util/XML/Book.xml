@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="gbk"?>
+<bookstore>
+    <book>
+        <title lang="en">Harry Potter</title>
+        <author>J K. Rowling</author>
+        <year>2005</year>
+        <price>28.5</price>
+    </book>
+    <book>
+        <title lang="en">Junit IN Action</title>
+        <author>Robert J.</author>
+        <year>2007</year>
+        <price>58.5</price>
+    </book>
+    <book>
+        <title lang="en">Struts 2 IN Action</title>
+        <author>Rhodes K.R</author>
+        <year>2005</year>
+        <price>53.6</price>
+    </book>
+    <book>
+        <title lang="en">Thinking of Java 4th</title>
+        <author>Bruce Eckel</author>
+        <year>2007</year>
+        <price>78.9</price>
+    </book>
+    <book>
+        <title lang="zh">修炼架构师之道</title>
+        <author>陈杰驰</author>
+        <year>2009</year>
+        <price>63.5</price>
+    </book>
+    <book>
+        <title lang="zh">哲学：心灵，宇宙</title>
+        <author>ChenFeng</author>
+        <year>2010</year>
+        <price>96</price>
+    </book>
+</bookstore>
