@@ -1,6 +1,5 @@
 package com.mmall.controller.portal;
 
-import com.alibaba.fastjson.JSON;
 import com.mmall.common.Const;
 import com.mmall.common.ResponsesCode;
 import com.mmall.common.ServerResponse;

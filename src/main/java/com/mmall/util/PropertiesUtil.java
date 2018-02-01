@@ -12,9 +12,7 @@ import java.util.Properties;
  * Created by geely
  */
 public class PropertiesUtil {
-
     private static Logger logger = LoggerFactory.getLogger(PropertiesUtil.class);
-
     private static Properties props;
 
     //静态块（类加载的时候只执行一次），优于普通代码块，优于构造代码块
@@ -37,7 +35,6 @@ public class PropertiesUtil {
     }
 
     public static String getProperty(String key, String defaultValue) {
-
         String value = props.getProperty(key.trim());
         if (StringUtils.isBlank(value)) {
             value = defaultValue;

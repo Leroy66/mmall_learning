@@ -128,6 +128,4 @@ public class FTPUtil {
     public void setFtpClient(FTPClient ftpClient) {
         this.ftpClient = ftpClient;
     }
-
-
 }

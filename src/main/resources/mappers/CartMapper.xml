@@ -26,7 +26,7 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
     <insert id="insert" parameterType="com.mmall.pojo.Cart">
-    insert into mmall_cart (id, user_id, product_id, 
+    insert into mmall_cart (id, user_id, product_id,
       quantity, checked, create_time, 
       update_time)
     values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{productId,jdbcType=INTEGER}, 

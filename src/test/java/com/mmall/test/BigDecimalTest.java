@@ -2,12 +2,9 @@ package com.mmall.test;
 
 import com.mmall.util.MD5Util;
 import org.junit.Test;
-import sun.misc.BASE64Encoder;
-import sun.security.provider.MD5;
 
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
-import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class BigDecimalTest {
@@ -40,4 +37,5 @@ public class BigDecimalTest {
         String pwd2 = MD5Util.MD5EncodeUtf8("wordoor1234");
         System.out.println(pwd2);
     }
+
 }
