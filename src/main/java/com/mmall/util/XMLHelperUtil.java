@@ -1,5 +1,6 @@
 package com.mmall.util;
 
+import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -52,9 +53,27 @@ public class XMLHelperUtil {
         }
     }
 
+
     public static XMLHelperUtil of(InputStream is) {
         InputSource inputSource = new InputSource(is);
         return create(inputSource);
+    }
+
+    //Map转换成xml
+    public static String toXml(Map<String, String> params) {
+        StringBuilder xml = new StringBuilder();
+        xml.append("<xml>");
+        for (Map.Entry<String, String> entry : params.entrySet()) {
+            String key   = entry.getKey();
+            String value = entry.getValue();
+            // 略过空值
+            if (StringUtils.isBlank(value)) continue;
+            xml.append("<").append(key).append(">");
+            xml.append(entry.getValue());
+            xml.append("</").append(key).append(">");
+        }
+        xml.append("</xml>");
+        return xml.toString();
     }
 
     public static XMLHelperUtil of(String xmlStr) {
