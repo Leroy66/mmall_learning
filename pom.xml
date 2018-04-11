@@ -259,6 +259,18 @@
             <version>1.2.3-SNAPSHOT</version>
         </dependency>
 
+        <!--下载图片视频-->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.7.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20160212</version>
+        </dependency>
+
     </dependencies>
 
 
