@@ -259,7 +259,7 @@
             <version>1.2.3-SNAPSHOT</version>
         </dependency>
 
-        <!--下载图片视频-->
+        <!--下载图片视频 开始-->
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
@@ -270,6 +270,20 @@
             <artifactId>json</artifactId>
             <version>20160212</version>
         </dependency>
+        <!--下载图片视频 结束-->
+
+        <!--webmagic jar begin-->
+        <dependency>
+            <groupId>us.codecraft</groupId>
+            <artifactId>webmagic-core</artifactId>
+            <version>0.7.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.11.2</version>
+        </dependency>
+        <!--webmagic jar end-->
 
     </dependencies>
 

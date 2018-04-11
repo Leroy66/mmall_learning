@@ -9,7 +9,8 @@ package com.mmall.util.download;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;import org.jsoup.nodes.Element;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.File;
@@ -61,7 +62,8 @@ public class ImoocMain {
                                 "http://www.imooc.com/course/ajaxmediainfo/?mid=" +
                                         videoNo + "&mode=flash").get();
                         String jsonData = jsonDoc.text();
-                        jsonData=jsonData.replaceAll("v2","v3");
+                        //域名不正确，课程地址不正确
+                        //jsonData=jsonData.replaceAll("v2","v3");
                         JSONObject jsonObject = new JSONObject(jsonData);
                         JSONArray mpath = jsonObject.optJSONObject("data")
                                 .optJSONObject("result").optJSONArray("mpath");
